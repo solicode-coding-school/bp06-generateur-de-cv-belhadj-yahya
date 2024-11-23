@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>CV Form</title>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Fill Your CV Information</h1>
+        <form id="cvForm" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" class="i" required>
+          </div>
+          <div class="form-group">
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" class="i" required>
+          </div>
+          <div class="form-group">
+            <label for="address">Email:</label>
+            <input type="email" id="email" name="email" class="i" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" class="i" required>
+          </div>
+          <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" class="i" required>
+          </div>
+          <div class="form-group">
+            <label for="photo">Upload Photo:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required>
+          </div>
+          <div class="form-group">
+            <label for="introduction">About You:</label>
+            <textarea id="introduction" name="introduction" rows="5" placeholder="Write about yourself..." class="i" required></textarea>
+          </div>
+          <h2>Schools</h2>
+          <div id="schools-container">
+            <div class="school-fields">
+              <input type="text" name="degree" class="degree i" placeholder="Degree" required>
+              <input type="text" name="schoolName" class="schoolName i" placeholder="School Name" required>
+              <input type="date" name="startDate" class="startDate i" placeholder="Start Date" required>
+              <input type="date" name="endDate" class="endDate i" placeholder="End Date" required>
+            </div>
+          </div>
+          <button type="button" id="addSchool" class="add">Add More School</button>
+          <h2>Experience</h2>
+          <div id="experience-container">
+            <div class="experience-fields">
+              <input type="text" name="jobTitle" class="jobTitle i" placeholder="Job Title" required>
+              <input type="text" name="companyName" class="companyName i" placeholder="Company Name" required>
+              <input type="date" name="jobStartDate" class="jobStartDate i" placeholder="Start Date" required>
+              <input type="date" name="jobEndDate" class="jobEndDate i" placeholder="End Date" required>
+            </div>
+          </div>
+          <button type="button" id="addExperience" class="add">Add More Experience</button>
+          <h2>Skills</h2>
+          <div id="skills-container">
+            <input type="text" name="skills" class="skills i" placeholder="Skill" required>
+          </div>
+          <button type="button" id="addSkill" class="add">Add More Skill</button>
+          <h2>Languages</h2>
+          <div id="languages-container">
+            <input type="text" name="languages" class="languages i" placeholder="Language" required>
+          </div>
+          <button type="button" id="addLanguage" class="add">Add More Language</button>
+          <h2>Hobbies</h2>
+          <div id="hobbies-container">
+            <input type="text" name="hobbies" class="hobbies i" placeholder="Hobby" required>
+          </div>
+          <button type="button" id="addHobby" class="add">Add More Hobby</button>
+          <div class="form-group">
+          </div>
+        </form>
+        <a href="cv.html"><button class="sub">Submit</button></a>
+      </div>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
