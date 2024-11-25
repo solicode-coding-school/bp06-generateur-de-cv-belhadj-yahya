@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0; 
+    color: #6b7786;  
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.gg, .did{
+    margin: 3vh auto;
+    text-align: center;
+    width: 20%;
+    height: 10vh;
+    font-size: 4vw;
+    border: 2px solid #ccc;
+    background-color: ghostwhite;
+    border-radius: 10px;
+    transition-duration: 1s;
+}
+.gg:hover , .did:hover{
+    cursor: pointer;
+    background-color: #d3e0e0;
+    width: 21%;
+    background-color: rgb(217, 217, 248);
+}
+.cont{
+    width: 100%;
+     height: auto; 
+    border: 1px solid black;
+    display: flex;
+}
+#left{
+     background-color: #e4f0f0; 
+     height: auto; 
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3vh;
+
+}
+#right{
+     background-color: #ffffff; 
+     height: auto; 
+    width: 70%;
+}
+
+/*image and name style*/
+.img_and_name{
+     height: 70vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 9vh;
+}
+#preview{
+    border: 2px solid #62727f;
+    width: 80%;
+    height: 30vh;
+    border-radius: 50%;
+    margin-top: 4vh;
+}
+.name{
+    width: 100%;
+     height: fit-content; 
+    text-align: center;
+    font-size: 2rem;
+}
+/*profile style*/
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+.ph{
+    font-size: 2rem;
+}
+.intro::before{
+    position: relative;
+    left: 1vw;
+    content: "";
+    display: block;
+    width: 93%;
+    height: 0.5vh;
+    border-radius: 10px;
+    background-color: #62727f;
+    margin: 20px 30px 20px 0;
+}
+.intro{
+    width: 100%;
+    line-height: 4vh;
+     height: fit-content; 
+     word-wrap: break-word; 
+     white-space: normal;  
+     overflow-wrap: break-word; 
+    text-align: center;
+}
+/*contact info style*/
+.ppp{
+    margin-left: 2vw;
+    margin-top: 5vh;
+}
+.txt{
+    margin-top: 5vh;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+
+}
+.address img,.phone img, .email img, .age img{
+    width: 6%;
+    height: 6vh;
+    margin-left: 3vw;
+}
+.saprator{
+    position: relative;
+    left: 1vw;
+    width: 93%;
+    height: 0.5vh;
+    background-color: #62727f;
+    margin: 10px 40px 10px 0;
+}
+.address, .phone, .email, .age{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    word-break: break-all;
+    gap: 5px;
+    /* margin-left: 2vw; */
+    margin: 2vh 0 2vh 2vh;
+}
+.sapratorF{
+    position: relative;
+    left: 2.1vw;
+    width: 97%;
+    height: 0.5vh;
+    background-color: #62727f;
+    margin: 10px 0 10px 0;
+}
+.schoole, .company{
+    display: flex;
+    gap: 10px;
+    margin-left: 2.5vw;
+    width: 80%;
+    margin-bottom: 3vh;
+    font-family: "Oleo Script", system-ui;
+    font-weight: 400;
+    font-size: 16px;
+}
+.schoole_degree, .job_name{
+    margin-left: 2vw;
+    margin-bottom: 2vh;
+    font-size: 16px;
+}
+li{
+    margin-left: 5vw;
+    font-size: 20px;
+    font-family: "Oleo Script", system-ui;
+    font-weight: 400;
+    margin-bottom: 1vh;
+
+} 
+
+
